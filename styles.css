@@ -1,0 +1,98 @@
+:root{
+  --blue: #1e90ff;
+  --blue-2: #0077dd;
+  --deep-blue: #001e3a;
+  --white: #ffffff;
+  --card-bg: rgba(3,10,25,0.56);
+  --gap: 24px;
+  --radius: 14px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;}
+body{
+  background: url('fundo-ondas.png') center/cover no-repeat fixed;
+  color:var(--white);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* central card */
+.container{
+  width:100%;
+  max-width:520px;
+  text-align:center;
+  padding:32px;
+  border-radius:18px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.32));
+  box-shadow: 0 18px 50px rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* logo */
+.logo{height:72px;margin:0 auto 8px;display:block;filter: drop-shadow(0 14px 36px rgba(0,0,0,0.6));}
+
+/* texts */
+.brand{font-size:20px;margin:6px 0 0;font-weight:800;letter-spacing:-0.4px;color:var(--white)}
+.subtitle{margin:8px 0 18px;color:var(--white);opacity:1;font-weight:600}
+.accent{color:var(--blue);font-weight:900;}
+
+/* buttons stack */
+.btn-container{
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap);
+  margin-top:6px;
+  padding:6px 4px;
+}
+
+/* buttons default: transparent */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 18px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:800;
+  color:var(--white);
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 8px 26px rgba(2,6,23,0.55);
+  transition: transform .18s cubic-bezier(.2,.9,.2,1), background .18s ease, box-shadow .18s ease;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* hover / focus / active (keyboard/mouse) and JS-driven .pressed class for touch */
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.pressed{
+  background: linear-gradient(180deg, var(--blue), var(--blue-2));
+  color: var(--white);
+  border-color: transparent;
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(30,144,255,0.14);
+  outline: none;
+}
+
+/* subtle pressed visual for a11y when keyboard selects */
+.btn:focus-visible{ box-shadow: 0 0 0 4px rgba(30,144,255,0.12); }
+
+.note{margin-top:18px;font-size:13px;color:rgba(255,255,255,0.85)}
+
+/* footer */
+.site-footer{width:100%;max-width:520px;margin:18px auto 0;text-align:center;color:rgba(255,255,255,0.82);font-size:13px;padding:8px;border-radius:8px;}
+
+/* responsive tweaks */
+@media (max-width:520px){
+  .container{padding:22px;border-radius:12px}
+  .logo{height:64px}
+  :root{--gap:18px}
+}
