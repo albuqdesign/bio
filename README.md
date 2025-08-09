@@ -16,5 +16,5 @@ Publicar no GitHub Pages:
 Observações:
 - Todos os botões são transparentes por padrão.
 - Ao passar o mouse, focar com teclado, clicar ou tocar no celular os botões ficam destacados em azul.
-- Espaçamento entre os botões aumentado (gap 24px).
+- Espaçamento entre os botões aumentado (gap 48px).
 - Copyright / ano aparece no rodapé.
