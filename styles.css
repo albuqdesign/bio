@@ -35,7 +35,7 @@ body{
 }
 
 /* logo */
-.logo{height:65px;margin:0 auto 8px;display:block;filter: drop-shadow(0 14px 36px rgba(0,0,0,0.6));}
+.logo{height:45px;margin:0 auto 8px;display:block;filter: drop-shadow(0 14px 36px rgba(0,0,0,0.6));}
 
 /* texts */
 .subtitle{margin:8px 0 18px;color:var(--white);opacity:1;font-weight:600}
