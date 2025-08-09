@@ -38,7 +38,7 @@ body{
 .logo{height:72px;margin:0 auto 8px;display:block;filter: drop-shadow(0 14px 36px rgba(0,0,0,0.6));}
 
 /* texts */
-.brand{font-size:20px;margin:6px 0 0;font-weight:800;letter-spacing:-0.4px;color:var(--white)}
+.brand{font-size:10px;margin:6px 0 0;font-weight:800;letter-spacing:-0.4px;color:var(--white)}
 .subtitle{margin:8px 0 18px;color:var(--white);opacity:1;font-weight:600}
 .accent{color:var(--blue);font-weight:900;}
 
