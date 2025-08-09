@@ -92,6 +92,6 @@ body{
 /* responsive tweaks */
 @media (max-width:520px){
   .container{padding:22px;border-radius:12px}
-  .logo{height:64px}
+  .logo{height:40px}
   :root{--gap:18px}
 }
